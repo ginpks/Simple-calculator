@@ -1,0 +1,55 @@
+body {
+    background-color: #384d48;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* designing background of calculator */
+.calc {
+    background-color: #555858;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+/* styling buttons */
+.calc form input { 
+    border: 1px;
+    border-style: solid;
+    box-shadow: -2px 1px 5px #ACAD94;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    color: #e2e2e2;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#red {
+    color: red;
+    box-shadow: -2px 1px 5px #ce1010;
+}
+
+#equals {
+    width: 145px;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+}
