@@ -1,3 +1,7 @@
+* {
+    font-family: "Silkscreen", sans-serif;
+}
+
 body {
     background-color: #384d48;
 }
@@ -8,6 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 /* designing background of calculator */
@@ -15,19 +20,24 @@ body {
     background-color: #555858;
     padding: 20px;
     border-radius: 30px;
+    box-shadow: -2px 1px 5px #191a14, 3px 1px 5px #191a14;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+
 }
 
 /* styling buttons */
 .calc form input { 
     border: 1px;
     border-style: solid;
-    box-shadow: -2px 1px 5px #ACAD94;
+    box-shadow: -2px 1px 5px #191a14, 3px 1px 5px #191a14;
     outline: 0;
     width: 60px;
     height: 60px;
     border-radius: 10px;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 25px;
     color: #e2e2e2;
     cursor: pointer;
     margin: 10px;
@@ -35,7 +45,7 @@ body {
 
 #red {
     color: red;
-    box-shadow: -2px 1px 5px #ce1010;
+    box-shadow: -2px 1px 5px #191a14, 3px 1px 5px #191a14;
 }
 
 #equals {
@@ -52,4 +62,7 @@ form .display input{
     text-align: right;
     flex: 1;
     font-size: 45px;
+    background-color: rgb(206, 147, 39);
+    color: black;
+    box-shadow: none;
 }
