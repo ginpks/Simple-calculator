@@ -20,9 +20,9 @@ body {
     background-color: #555858;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: -2px 1px 5px #191a14, 3px 1px 5px #191a14;
+    box-shadow: -2px 1px 5px #353533, 3px 1px 5px #353533;
     border-style: solid;
-    border-color: black;
+    border-color: #353533;
     border-width: 1px;
 
 }
@@ -31,7 +31,7 @@ body {
 .calc form input { 
     border: 1px;
     border-style: solid;
-    box-shadow: -2px 1px 5px #191a14, 3px 1px 5px #191a14;
+    box-shadow: -2px 1px 5px #383836, 3px 1px 5px #383836;
     outline: 0;
     width: 60px;
     height: 60px;
@@ -50,7 +50,7 @@ body {
 
 #red {
     color: red;
-    box-shadow: -2px 1px 5px #191a14, 3px 1px 5px #191a14;
+    box-shadow: -2px 1px 5px #383836, 3px 1px 5px #383836;
 }
 
 #equals {

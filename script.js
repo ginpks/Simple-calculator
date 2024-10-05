@@ -53,9 +53,6 @@ buttons.forEach(btn => {
             case "+":
                 display.value += "+";
                 break;
-            case "√":
-                display.value += "√";
-                break;
             case "x":
                 display.value += "x";
                 break;
@@ -86,5 +83,9 @@ evaluate.addEventListener('click', function() {
 
 let sqrt = document.getElementById("sqrt");
 sqrt.addEventListener('click', function() {
-    
+    if (display.value === "" || isNaN(display.value)) {
+        display.value = "undefined";
+        return;
+    } 
+    display.value = Math.sqrt(display.value);
 });
