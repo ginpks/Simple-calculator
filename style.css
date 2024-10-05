@@ -72,3 +72,13 @@ form .display input{
     box-shadow: none;
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 404px) and (min-width: 360px) {
+    .container {
+        width: 100%;
+    }
+
+    .calc form input {
+        margin: 3.5px;
+    }
+}
