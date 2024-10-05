@@ -64,7 +64,7 @@ let evaluate = document.getElementById("equals");
 evaluate.addEventListener('click', function() {
     let stringToEvaluate = "";
     let displayValue = display.value;
-    if (isNaN(displayValue[0]) || isNaN(displayValue[displayValue.length - 1]) || displayValue[0] === "0") {
+    if (isNaN(displayValue.slice(0, 2)) || isNaN(displayValue[displayValue.length - 1]) || displayValue[0] === "0") {
         display.value = "undefined";
         return;
     }
