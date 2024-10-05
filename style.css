@@ -19,7 +19,7 @@ body {
 .calc {
     background-color: #555858;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: -2px 1px 5px #191a14, 3px 1px 5px #191a14;
     border-style: solid;
     border-color: black;
@@ -38,9 +38,14 @@ body {
     border-radius: 50px;
     background-color: transparent;
     font-size: 25px;
-    color: #e2e2e2;
+    color: rgb(206, 147, 39);
     cursor: pointer;
     margin: 10px;
+    
+}
+
+.btn:hover {
+    background-color: rgb(255, 255, 255, 0.1);
 }
 
 #red {
