@@ -2,12 +2,9 @@
     font-family: "Silkscreen", sans-serif;
 }
 
-html {
-    color-scheme: dark light;
-}
 
 body {
-    background-color: light-dark(#384d48, #0f0f0f);
+    background-color: #384d48;
 }
 
 .container {
@@ -21,10 +18,10 @@ body {
 
 /* designing background of calculator */
 .calc {
-    background-color: light-dark(#555858, #2e2e2e);
+    background-color: #555858;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: -2px 1px 5px light-dark(#353533, #0f0f0f), 3px 1px 5px light-dark(#353533, #0f0f0f);
+    box-shadow: -2px 1px 5px #353533, 3px 1px 5px #353533;
     border-style: solid;
     border-color: #353533;
     border-width: 1px;
@@ -35,7 +32,7 @@ body {
 .calc form input { 
     border: 1px;
     border-style: solid;
-    box-shadow: -2px 1px 5px light-dark(#353533, #3ee74c), 3px 1px 5px light-dark(#353533, #3ee74c);
+    box-shadow: -2px 1px 5px #383836, 3px 1px 5px #383836;
     outline: 0;
     width: 60px;
     height: 60px;
@@ -45,7 +42,6 @@ body {
     color: rgb(206, 147, 39);
     cursor: pointer;
     margin: 10px;
-    border-color: light-dark(rgb(206, 147, 39), #3ee74c)
     
 }
 
@@ -55,7 +51,7 @@ body {
 
 #red {
     color: red;
-    box-shadow: -2px 1px 5px light-dark(#383836, #3ee74c), 3px 1px 5px light-dark(#383836, #3ee74c);
+    box-shadow: -2px 1px 5px #383836, 3px 1px 5px #383836;
 }
 
 #equals {
@@ -72,7 +68,7 @@ form .display input{
     text-align: right;
     flex: 1;
     font-size: 45px;
-    background-color: light-dark(rgb(206, 147, 39), rgb(160, 120, 47));
+    background-color: rgb(206, 147, 39);
     color: black;
     box-shadow: none;
     border-radius: 10px;
