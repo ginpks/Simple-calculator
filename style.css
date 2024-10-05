@@ -35,7 +35,7 @@ body {
     outline: 0;
     width: 60px;
     height: 60px;
-    border-radius: 10px;
+    border-radius: 50px;
     background-color: transparent;
     font-size: 25px;
     color: #e2e2e2;
@@ -65,4 +65,5 @@ form .display input{
     background-color: rgb(206, 147, 39);
     color: black;
     box-shadow: none;
+    border-radius: 10px;
 }
