@@ -63,11 +63,7 @@ buttons.forEach(btn => {
 let evaluate = document.getElementById("equals");
 evaluate.addEventListener('click', function() {
     let stringToEvaluate = "";
-    let displayValue = display.value;
-    if (isNaN(displayValue.slice(0, 2)) || isNaN(displayValue[displayValue.length - 1]) || displayValue[0] === "0") {
-        display.value = "undefined";
-        return;
-    }
+
     for (let char of display.value) {
         if (char === "÷") {
             stringToEvaluate += " / ";
@@ -78,7 +74,11 @@ evaluate.addEventListener('click', function() {
             stringToEvaluate += char;
         }
     }
-    display.value = eval(stringToEvaluate);
+    try {
+        display.value = eval(stringToEvaluate);
+    } catch {
+        display.value = "undefined";
+    }
 })
 
 let sqrt = document.getElementById("sqrt");
