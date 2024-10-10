@@ -2,6 +2,12 @@ let buttons = document.querySelectorAll(".btn");
 let display = document.getElementById("display");
 const quack = new Audio("quack_5.mp3");
 
+function operatorPresent(value) {
+    if (value[value.length - 1] === "÷" || value[value.length - 1] === "-" || value[value.length - 1] === "+" || value[value.length - 1] === "x") {
+        return true;
+    }
+    return false;
+}
 buttons.forEach(btn => {
     btn.addEventListener("click", event => {
         const value = event.target.value;
@@ -60,19 +66,39 @@ buttons.forEach(btn => {
                 break;
             case "÷":
                 quack.play();
-                display.value += "÷";
+                if (operatorPresent(display.value)) {
+                    display.value = display.value.slice(0,-1);
+                    display.value += "÷";
+                } else {
+                    display.value += "÷";
+                }
                 break;
             case "-":
                 quack.play();
-                display.value += "-";
+                if (operatorPresent(display.value)) {
+                    display.value = display.value.slice(0,-1);
+                    display.value += "-";
+                } else {
+                    display.value += "-";
+                }
                 break;
             case "+":
                 quack.play();
-                display.value += "+";
+                if (operatorPresent(display.value)) {
+                    display.value = display.value.slice(0,-1);
+                    display.value += "+";
+                } else {
+                    display.value += "+";
+                }
                 break;
             case "x":
                 quack.play();
-                display.value += "x";
+                if (operatorPresent(display.value)) {
+                    display.value = display.value.slice(0,-1);
+                    display.value += "x";
+                } else {
+                    display.value += "x";
+                }
                 break;
         }
     })
